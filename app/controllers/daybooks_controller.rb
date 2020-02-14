@@ -8,7 +8,7 @@ class DaybooksController < ApplicationController
 
   def create 
   	@daybook = Daybook.new(daybook_params)
-  	if @daybook .save
+  	if @daybook.save
   		redirect_to 
   	else
   		render 'new'

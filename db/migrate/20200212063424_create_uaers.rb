@@ -1,10 +1,5 @@
 class CreateUaers < ActiveRecord::Migration[5.2]
   def change
-    create_table :uaers do |t|
-      t.string :name
-      t.string :email
-
-      t.timestamps
-    end
+    drop_table :uaers
   end
 end
